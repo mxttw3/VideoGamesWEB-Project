@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="./js/contact.js" defer></script>
+    <title>G2B Web de compra y venta de videojuegos & merch</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/g2b.svg" alt="logo de G2B" class="logoNav" />
+        <nav>
+            <a href="./index.html" id="navbar_home">HOME</a>
+            <a href="./games.html" id="navbar_games">GAMES</a>
+            <a href="./merch.html" id="navbar_merch">MERCH</a>
+            <button class="headerbutton">
+                <a href="./contact.html" id="navbar_contact">CONTACT</a>
+            </button>
+
+        </nav>
+    </header>
+
+    <!-- PART 2 -->
+    <div class="cuerpo">
+        <div class="News">
+            <h1 class="zonetittle" id="Contacto">Contact</h1>
+            <form name="register" method="POST" data-netlify="true">
+                <div class="form-group">
+                    <label for="first-name" id="t_first_name">First Name</label>
+                    <input type="text" id="first-name" name="first-name"/>
+                </div>
+                <div class="form-group">
+                    <label for="last-name" id="last_name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name"/>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="is-required">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="welcome-message" id="Mensaje">Message</label>
+                    <textarea name="welcome-message" id="welcome-message"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="age" id="Edad">Age</label>
+                    <input type="number" id="age" name="age" />
+                </div>
+                <div class="form-group">
+                    <label for="birthday" id="cum">Birthday</label>
+                    <input type="date" id="birthday" name="brithday" />
+                </div>
+                <button type="submit" class="btn" id="enviar">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="logo">
+                <img src="./images/g2b.svg" alt="logo de G2B" class="logo" width="100px" height="100px" />
+            </div>
+            <br/>
+            <br/>
+            <div class="company" id="footer_company">
+                <h1>WEB:</h1>
+            </div>
+            <div class="how-it-works" id="footer_home">
+                <h2><a href="./index.html">Home</a></h2>
+            </div>
+            <div class="pricing" id="footer_games"><a href="./games.html">Games</a></div>
+            <div class="docs"><a href="./merch.html">Merch</a></div>
+            <div class="resources">
+                <h1 id="footer_sponsors">SPONSORS:</h1>
+            </div>
+            <div class="aa">
+                <a href="https://www.off---white.com/en-es/">
+                    <h2>Off White</h2>
+                </a>
+            </div>
+            <div class="aaaa">
+                <a href="https://www.adultswim.com/">
+                    <h2>Adut Swim</h2>
+                </a>
+            </div>
+            <div class="aaaazc-">
+                <a href="https://www.netflix.com/">
+                    <h2>Netflix</h2>
+                </a>
+            </div>
+            <div class="no-se-que-poner">
+                <a href="https://www.lasallegracia.cat/">
+                    <h2>La Salle Gracia</h2>
+                </a>
+            </div>
+            <div class="about">
+                <h1 id="footer_resources">LANGUAGE:</h1>
+            </div>
+            <div class="terms-and">
+                <h2 class="click" id="footer_TC" onclick="changeLanguage('es')"><a href="#UP">Spanish</a></h2>
+            </div>
+            <div class="privacy-polici">
+                <h2 class="click" id="footer_privacy" onclick="changeLanguage('ca')"><a href="#UP">Catalan</a></h2>
+            </div>
+            <div class="social-networks">
+                <h2 class="click" id="social"><a href="./contact.html">English</a></h2>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,387 @@
+.container {
+    position: relative;
+}
+
+.imagendiv {
+    background: url(../images/hollowknight.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    /* height: 550px; */
+    height: 550px;
+    z-index: -1;
+}
+/* Efecto de triangulo debajo la imagen */
+.imagendiv::after {
+    content: "";
+    clip-path: polygon(0 100%,100% 100%,0 0);
+    background: #272727;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.News{
+    width: 100%;
+    background-color: #272727;
+    padding-bottom: 3.5%;
+}
+.zonetittle{
+    font-family: BoldFont;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 1.5%;
+    z-index: 2;
+}
+
+/* GRID + IMAGENES */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-gap: 55px;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: center;
+}
+    
+.grid-item {
+    color: white;
+    height: 270px;
+}
+
+.gamediv {
+    width: 100%;
+    height: 85%;
+    border-radius: 25px;
+    transition: transform 0.4s ease-in-out;
+}
+.gamediv:hover {
+    transform: scale(1.05);
+}
+
+#HighOnLife{
+    background:url(https://bit.ly/3HOj3cO);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#Subnautica{
+    background:url(https://bit.ly/40fAKZU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#DragonBall{
+    background:url(https://bit.ly/3X0tZIF);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#Ghostrunner{
+    background:url(https://bit.ly/3DzF64e);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#Cuphead{
+    background:url(https://bit.ly/3WSLJ8V);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#Sekiro{
+    background:url(https://bit.ly/3XZqWBJ);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#BreadAndFred{
+    background:url(https://bit.ly/3Hv8n19);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#Deadspace{
+    background:url(https://bit.ly/3JA6Mdf);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#Forspoken{
+    background:url(https://bit.ly/3JEiAeu);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* VIDEOS */
+.CStrailer{
+    display: none;
+}
+
+#HighOnLife:hover {
+background: transparent;
+}
+
+#HighOnLife:hover .CStrailer{
+display: flex;
+width: 100%;
+height: 100%;
+border-radius: 25px;
+}
+
+#Subnautica:hover {
+background: transparent;
+}
+
+#Subnautica:hover .CStrailer{
+display: flex;
+width: 100%;
+height: 100%;
+border-radius: 25px;
+}
+
+#DragonBall:hover {
+background: transparent;
+}
+
+#DragonBall:hover .CStrailer{
+display: flex;
+width: 100%;
+height: 100%;
+border-radius: 25px;
+}
+
+#Ghostrunner:hover {
+background: transparent;
+}
+
+#Ghostrunner:hover .CStrailer{
+display: flex;
+width: 100%;
+height: 100%;
+border-radius: 25px;
+}
+
+#Cuphead:hover {
+background: transparent;
+}
+
+#Cuphead:hover .CStrailer{
+display: flex;
+width: 100%;
+height: 100%;
+border-radius: 25px;
+}
+
+#Sekiro:hover {
+background: transparent;
+}
+
+#Sekiro:hover .CStrailer{
+display: flex;
+width: 100%;
+height: 100%;
+border-radius: 25px;
+}
+
+#BreadAndFred:hover {
+background: transparent;
+}
+
+#BreadAndFred:hover .CStrailer{
+display: flex;
+width: 100%;
+height: 100%;
+border-radius: 25px;
+}
+
+#Deadspace:hover {
+background: transparent;
+}
+
+#Deadspace:hover .CStrailer{
+display: flex;
+width: 100%;
+height: 100%;
+border-radius: 25px;
+}
+
+
+#Forspoken:hover {
+background: transparent;
+}
+
+#Forspoken:hover .CStrailer{
+display: flex;
+width: 100%;
+height: 100%;
+border-radius: 25px;
+}
+
+
+.title{
+    padding-right: 70%;
+}
+
+.textNEW{
+    display: flex;
+    margin-top: 10px;
+    font-family: NormalFont;
+    font-weight: bold;
+}
+
+.titleNEW{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.priceNEW{
+    margin-right: 10px;
+    margin-left: auto;
+    font-size: 25px;
+}
+
+.MainContainer{
+    display: flex;
+    color: white;
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    flex-direction: column;
+    position: relative;
+}
+.maintittle{
+    font-family: BoldFont;
+}
+.mainprice{
+    font-family: NormalFont;
+    font-size: 25px;
+}
+.mainbutton{
+    font-family: BoldFont;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #272727;
+    
+}
+.mainbutton{
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    font-family: BoldFont;
+}
+
+
+.mainbutton:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s ease-in-out;
+}
+
+/* PARA LAS REVIEWS */
+
+.gridREV {
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
+    grid-gap: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: center;
+    }
+    
+.grid-item-REV {
+    padding-top: 1vh;
+    background-color: white;
+    color: black;
+    height: 270px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    font-family: BoldFont;
+    
+}
+.borde{
+    margin-top: 1vh;
+    border: 2px solid black;
+    border-style: outset;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+}
+.textREV{
+    padding-top: 1%;
+    position: absolute;
+    font-size: 1.2rem;
+
+}
+
+.estrellas{
+    margin-top: 3.5%;
+    position: absolute;
+    font-size: 1.2rem;
+}
+
+.textoREV {
+    position: relative;
+    margin-top: 10vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+
+}
+
+@media (max-width: 1457px) {
+    .grid {
+        grid-template-columns: repeat(2, 370px);
+    }
+    .News{
+        padding-bottom: 25px;
+    }
+    .Reviews{
+        padding-top: 20px;
+    }
+    .gridREV {
+        grid-template-columns: 700px;
+    }
+    .Reviews{
+        padding-bottom: 5%;
+    }
+    .estrellas{
+        margin-top: 4%;
+    }
+}
+
+@media (max-width: 929px) {
+    .grid {
+        grid-template-columns: 370px;
+    }
+    .News{
+        padding-bottom: 25px;
+    }
+    .Reviews{
+        padding-top: 30px;
+    }
+    .gridREV {
+        grid-template-columns: 370px;
+    }
+    }
+@media (max-width: 430px) {
+    .estrellas{
+        margin-top: 12%;
+    }
+}
+    
+.textoREV{
+    text-align: justify;
+}

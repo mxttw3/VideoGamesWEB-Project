@@ -1,0 +1,328 @@
+.img-header {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 0%, #CDFFEB 36%, #009F9D 36%, #009F9D 60%, #1e1e1e 60%, #1e1e1e 67%, #1e1e1e 67%, #0F0A3C 100%);
+  background-blend-mode: overlay, hard-light, normal;
+	background-size: 400% 400%;
+	animation: gradient 10s infinite;
+	height: 15vh;
+  margin-bottom: 5vh;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.textoCua {
+  height: 10Vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: BoldFont;
+  font-size: 6vw;
+}
+
+body {
+    background-color: #272727;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-gap: 55px;
+  padding-left: 15%;
+  padding-right: 15%;
+  justify-content: center;
+  margin-bottom: 10vh;
+  }
+  
+.grid-item {
+color: white;
+height: 270px;
+}
+
+@media (max-width: 1457px) {
+  .grid {
+      grid-template-columns: repeat(2, 370px);
+  }
+}
+
+@media (max-width: 929px) {
+  .grid {
+      grid-template-columns: 370px;
+  }
+}
+
+@media (max-width: 400px) {
+
+}
+
+.gamediv {
+  width: 100%;
+  height: 85%;
+  border-radius: 25px;
+  transition: transform 0.4s ease-in-out;
+  position: relative;
+}
+
+.descuento {
+  border-radius: 10px 10px 0;
+  width: 12%;
+  height: 12%;
+  background: #c50d0d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.descuento > p {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ELtrailer{
+  display: none;
+}
+
+#EldenRing:hover {
+  background: transparent;
+}
+
+#EldenRing:hover .ELtrailer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  
+}
+
+.GoWtrailer{
+  display: none;
+}
+
+#GodOfWar:hover {
+  background: transparent;
+}
+
+#GodOfWar:hover .GoWtrailer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.CStrailer{
+  display: none;
+}
+
+#CitiesSkylines:hover {
+  background: transparent;
+}
+
+#CitiesSkylines:hover .CStrailer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.MCtrailer{
+  display: none;
+}
+
+#Minecraft:hover {
+  background: transparent;
+}
+
+#Minecraft:hover .MCtrailer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.MW2trailer{
+  display: none;
+}
+
+#MW2:hover {
+  background: transparent;
+}
+
+#MW2:hover .MW2trailer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.SPtrailer{
+display: none;
+width: 100%;
+height: 100%;
+  
+}
+
+#Spiderman:hover {
+  background: transparent;
+}
+
+#Spiderman:hover .SPtrailer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.HKtrailer{
+  display: none;
+}
+
+#hollowknight:hover {
+  background: transparent;
+}
+
+#hollowknight:hover .HKtrailer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.WDtrailer{
+  display: none;
+}
+
+#WatchDogs:hover {
+  background: transparent;
+}
+
+#WatchDogs:hover .WDtrailer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.TLoUtrailer{
+  display: none;
+}
+
+#TheLastOfUs:hover {
+  background: transparent;
+}
+
+#TheLastOfUs:hover .TLoUtrailer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  z-index: 99;
+}
+
+#CitiesSkylines{
+  background-image: url(https://bit.ly/3JFe0gh) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#EldenRing{
+  background:url(https://bit.ly/3DzvkPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#GodOfWar{
+  background:url(https://bit.ly/3wPJ05t);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#Minecraft{
+  background:url(https://bit.ly/3Rt0j5R);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#MW2{
+  background:url(https://bit.ly/3DzIJYc);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#Spiderman{
+  background:url(https://bit.ly/3wSMJPL);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#TheLastOfUs{
+  background:url(https://bit.ly/3jrKFeq);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#WatchDogs{
+  background:url(https://bit.ly/3HSXSGI);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#hollowknight{
+  background:url(https://bit.ly/3JyRPbg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.gamediv:hover {
+  transform: scale(1.05);
+}
+  
+.title{
+  padding-right: 70%;
+}
+
+.textNEW{
+  display: flex;
+  margin-top: 10px;
+  font-family: NormalFont;
+  font-weight: bold;
+}
+
+.titleNEW{
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.priceNEW{
+  margin-right: 10px;
+  margin-left: auto;
+  font-size: 25px;
+}

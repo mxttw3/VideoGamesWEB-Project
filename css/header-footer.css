@@ -1,0 +1,199 @@
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: BoldFont;
+    src: url(../font/Fontspring-DEMO-proximanova-bold.otf);
+}
+@font-face {
+    font-family: NormalFont;
+    src: url(../font/Fontspring-DEMO-proximanova-light.otf);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.logoNav {
+    display: flex;
+    /* change image size */
+    width: 170px;
+    height: 55px;
+    margin: auto;
+    position: absolute;
+    margin-top: 1.4vh;
+    margin-left: 7%;
+
+}
+
+nav{
+    font-family: BoldFont;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    
+    }
+nav > a {
+    margin: 5px;
+    font-size: 20px;
+}
+
+header {
+    font-size: 20rem;
+    color: white;
+    height: 80px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: black;
+}
+
+.headerbutton{
+    align-items: center;
+    position: absolute;
+    background: black;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    height: 50%;
+    font-family: BoldFont;
+}
+
+.headerbutton{
+    padding: 5px 32px;
+    margin-right: 7%;
+    right: 0;
+
+}
+
+.headerbutton::before{
+    
+    align-items: center;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        red, blue, deeppink, blue,
+         red, blue, deeppink, blue
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.footer {  
+    font-family: BoldFont;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "logo company resources about"
+    "logo how-it-works aa terms-and"
+    "logo pricing aaaa privacy-polici"
+    "logo docs aaaazc- social-networks"
+    "logo . no-se-que-poner .";
+    background-color: black;
+    color: white;
+}
+
+.logo { grid-area: logo; width: 170px; height: 55px; margin-left: 12%; }
+
+.company { grid-area: company; }
+
+.how-it-works { grid-area: how-it-works; }
+
+.pricing { grid-area: pricing; }
+
+.docs { grid-area: docs; }
+
+.resources { grid-area: resources; }
+
+.aa { grid-area: aa; }
+
+.aaaa { grid-area: aaaa; }
+
+.aaaazc- { grid-area: aaaazc-; }
+
+.no-se-que-poner { grid-area: no-se-que-poner; }
+
+.about { grid-area: about; }
+
+.terms-and { grid-area: terms-and; }
+
+.privacy-polici { grid-area: privacy-polici; }
+
+.social-networks { grid-area: social-networks; }
+
+
+@media (max-width: 450px) {
+nav > a {
+    margin-top:10vh;
+}
+header {
+    padding-bottom: 5vh;
+}
+
+.headerbutton{
+height: 30%;
+}
+
+.logo{
+    display: none;
+    grid-area: none;
+}
+.footer {
+    padding-top: 5%;
+    padding-left: 7vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "company resources about"
+    "how-it-works aa terms-and"
+    "pricing aaaa privacy-polici"
+    "docs aaaazc- social-networks"
+    ". no-se-que-poner .";
+
+}
+}
+
+.footer > div {
+    margin-bottom: 0.5vh;
+}
+
+.click{
+    cursor: pointer;
+}
